@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="http://st.acstnst.com/content/!common_files/js/jquery.min.js"></script>
+  <script type="text/javascript" src="http://st.acstnst.com/content/!common_files/js/placeholders.min.js"></script>
+  <script type="text/javascript" src="http://st.acstnst.com/content/!common_files/js/moment-with-locales.min.js"></script>
+  <script type="text/javascript" src="http://st.acstnst.com/content/!common_files/js/dr.js"></script>
+  <script type="text/javascript" src="http://st.acstnst.com/content/!common_files/js/dtime.js"></script>
+  <script type="text/javascript" src="http://st.acstnst.com/content/!common_files/js/js.cookie.js"></script>
+  <script type="text/javascript" src="http://st.acstnst.com/content/!common_files/js/order_me.js"></script>
+  <script type="text/javascript" src="http://st.acstnst.com/content/!common_files/js/sender.js"></script>
+  <script src="http://ctr-localhost.ru/vlad/jq.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|Russo+One" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/flipclock.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Black Mask</title>
+</head>
+<body>
+  <div class="body-container">
+    <header>
+      <div class="wrapper">
+        <div class="page-title">Black Mask</div>
+        <h4>Blackhead Removal</h4>
+        <div class="chevron chevron--main">
+          <span>for men</span>
+          <img src="img/moustache.png" alt="">
+        </div>
+        <div class="header__table">
+          <div class="header__product">
+            <div class="flag">
+              <span>discount</span>
+              <span>50%</span>
+              <svg class="svg" version="1.1" xml:space="preserve" viewbox="0 0 100 100" preserveaspectratio="none">
+                <polygon  fill="#e60000"  points="0,0   100,0  100,80  50,100  0,80"></polygon>
+              </svg>
+            </div>
+            <img class="header__product-img" src="img/product.png" alt="">
+            <div class="header__product-prices">
+              <div class="header__prices-old">
+                <div class="header__prices-old-container">
+                  {{ old_price }} <span>{{ currency }}</span>
+                </div>
+              </div>
+              <div class="header__prices-new">
+                <div class="header__prices-new-container">
+                  {{ price }} <span> {{ currency }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__content">
+            <ul class="header__content-points">
+              <li class="header__content-points-item"><p><strong>Removes</strong> blackheads</p></li>
+              <li class="header__content-points-item"><p>Makes the skin smooth</p></li>
+              <li class="header__content-points-item"><p><strong>Your skin does not feel tight</strong></p></li>
+            </ul>
+            <div class="header__content-timer">
+              <div class="header__content-timer-title mark-brown">Promotion ends<span class="mobile">:</span> <span>Products left:</span></div>
+              <div class="counter-clock"></div>
+            </div>
+            <button class="button toform">order&nbsp;now</button>
+          </div>
+        </div>
+        <!-- <div class="clearfix"></div> -->
+      </div>
+    </header>
+    <div class="header__content-points header__content-points--mobile">
+      <div class="wrapper">
+        <div class="header__content-points-item"><strong>Removes</strong> blackheads</div>
+        <div class="header__content-points-item">Makes the skin smooth</div>
+        <div class="header__content-points-item"><strong>The skin does not feel tight</strong></div>
+      </div>
+    </div>
+    <section class="how">
+      <div class="wrapper">
+        <div class="chevron">
+          <span>for men</span>
+          <img src="img/moustache.png" alt="">
+        </div>
+        <h5>How Black Mask works</h5>
+        <ul class="how__items">
+          <li>
+            <h6>
+              <span>
+                <span>
+                  <b class="how__number">1.</b>
+                  <b class="how__title">cleans</b>
+                </span>
+              </span>
+            </h6>
+            <p>Carbon particles peel off the dead skin cells, <span class="mark-brown">stimulating cellular regeneration.</span></p>
+          </li>
+          <li>
+            <h6>
+              <span>
+                <span>
+                  <b class="how__number">2.</b>
+                  <b class="how__title">Nourishes</b>
+                </span>
+              </span>
+            </h6>
+            <p>Antibacterial components restore the skin and prevent oxidation in cells. <span class="mark-brown">Aging is slowed down. </span></p>
+          </li>
+          <li>
+            <h6>
+              <span>
+                <span>
+                  <b class="how__number">3.</b>
+                  <b class="how__title">Tightens pores</b>
+                </span>
+              </span>
+            </h6>
+            <p>Active substances penetrate into the deeper layers of the skin, <span class="mark-brown"> regulate sebum production and make the skin more elastic.</span> As a result, the pores are tightened, which prevents comedones from forming.</p>
+          </li>
+        </ul>
+        <div class="how__media">
+          <video  controls>
+            <source src="video/video.mp4" type="video/mp4" poster="img/video.jpg">
+          </video>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </section>
+    <section class="secret">
+      <div class="wrapper">
+        <div class="secret__head">
+          <div class="chevron">
+            <span>for men</span>
+            <img src="img/moustache.png" alt="">
+          </div>
+          <h5>
+            the secret of the samurai
+          </h5>
+        </div>
+        <div class="secret__content">
+          <p class="secret__text">The Japanese samurai were usually involved in long military campaigns without being able to wash with soap and water. However, The Bushido code of honour obliged the warriors to keep their souls and bodies clean. <b>That's when the samurai learned how to use bamboo charcoal instead of soap.</b> Fires for cooking were usually made with bamboo, so there was always plenty of charcoal at hand. </p>
+          <p class="mark-red secret__text">Charcoal absorbed sebum and killed bacteria, leaving the skin dry and clean.</p>
+          <div class="secret__frame">
+            <p>When the wars were over, <span class="mark-red">the samurai continued to use charcoal,</span>  considering it to be the best hygiene product.</p>
+            <img class="secret__img-coalfull" src="img/coalthree.png" alt="">
+            <img class="secret__img-coalhalf" src="img/coalhalf.png" alt="">
+          </div>
+          <button class="button toform">order&nbsp;now</button>
+        </div>
+      </div>
+    </section>
+    <section class="facts">
+      <div class="wrapper">
+        <div class="facts__content">
+          <h5>Black Mask</h5>
+          <p>Charcoal has high absorption properties, it emits infrared rays and negative ions.</p>
+          <p class="mark-brown">Charcoal absorbs sebum and dirt, pulls out the blackheads and tightens the pores.</p>
+          <p>The bamboo charcoal is burned in ovens at temperatures higher than 1,000 °C.</p>
+        </div>
+        <div class="facts__img">
+          <img class="facts__img-product" src="img/product.png" alt="">
+          <img class="facts__img-bamboo" src="img/bamboo.png" alt="">
+          <img class="facts__img-cup" src="img/cup.png" alt="">
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </section>
+    <section class="steps">
+      <div class="wrapper">
+        <div class="chevron">
+          <span>for men</span>
+          <img src="img/moustache.png" alt="">
+        </div>
+        <h5>Fast removal of blackheads</h5>
+        <ul class="steps__list">
+            <li class="steps__item">
+              <div class="steps__item-text">
+                <div class="steps__count">1</div>
+                <p>Active <span class="mark-brown">components of the mask </span> <span class="mark-brown">penetrate deeply</span> into the pores</p>
+              </div>
+              <div class="steps__item-img"></div>
+            </li>
+            <li class="steps__item">
+              <div class="steps__item-img"></div>
+              <div class="steps__item-text">
+                <div class="steps__count">4</div>
+                <p>Under the influence of oxygen, the mask stiffens as it dries and <span class="mark-brown">grips the blackheads</span></p>
+              </div>
+            </li>
+            <li class="steps__item">
+              <div class="steps__item-text">
+                <div class="steps__count">2</div>
+                <p>When you peel off the mask, <span class="mark-brown">blackheads are extracted</span> from the pores</p>
+              </div>
+              <div class="steps__item-img"></div>
+            </li>
+            <li class="steps__item">
+              <div class="steps__item-img"></div>
+              <div class="steps__item-text">
+                <div class="steps__count">5</div>
+                <p>Panthenol <span class="mark-brown">soothes the skin</span> and tightens the pores</p>
+              </div>
+            </li>
+            <li class="steps__item">
+              <div class="steps__item-text">
+                <div class="steps__count">3</div>
+                <p><span class="mark-brown">The skin becomes smooth</span>, gets an even tone and stays clean for a long time</p>
+              </div>
+              <div class="steps__item-img"></div>
+            </li>
+            <li class="steps__item">
+              <div class="steps__item-img"></div>
+              <div class="steps__item-text">
+                <p class="mark-red">As a result, the pores are tightened, which prevents comedones from forming.</p>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </section>
+    <section class="opinion">
+      <div class="wrapper">
+        <div class="chevron">
+          <span>for men</span>
+          <img src="img/moustache.png" alt="">
+        </div>
+        <h5>Dermatologist's opinion</h5>
+        <div class="opinion__author">
+          <div class="opinion__author-img"></div>
+          <div class="opinion__author-text">
+            <b>Dr. Peter Wilson</b>
+            <span>M.D., Dermatologist</span>
+          </div>
+        </div>
+        <div class="opinion__content">
+          <p><b>We formulated Black Mask as a cosmeceutical product, combining our experience in cosmetology with our knowledge on the pharmacological properties of the ingredients.</b> </p>
+          <p>Our work resulted in the product specifically designed to eliminate blackheads. <span class="mark-brown">Black Mask not only cleans the skin from the outside, but also cures it from the inside, removing all imperfections.</span> With its all-natural components, the mask is suitable for the most demanding skin.</p>
+          <div class="opinion__content-result">
+            <div class="opinion__content-result-before">
+              <div class="opinion__content-img">
+                <span>before</span>
+              </div>
+            </div>
+            <div class="opinion__content-result-after">
+              <div class="opinion__content-img">
+                <span>after</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="use">
+      <div class="wrapper">
+        <div class="chevron">
+          <span>for men</span>
+          <img src="img/moustache.png" alt="">
+        </div>
+        <h5>How to use Black Mask</h5>
+        <ul class="use__steps">
+          <li>
+            <div class="use__text">
+              <p>
+                <b>Apply a generous amount</b> of the product to the face, avoiding the area around the eyes.
+              </p>
+              <div class="use__item-count">01</div>
+            </div>
+            <svg class="svg" version="1.1" xml:space="preserve" viewbox="0 0 4000 700" preserveaspectratio="none">
+              <polygon fill="url(#mygradient)" stroke="#e60000" stroke-width="8" stroke-linejoin="round" points="0,0  3800,0  3960,350  3800,700  0,700"></polygon>
+              <defs>
+                <lineargradient id="mygradient">
+                    <stop offset="0%"  stop-color="#e60000"/>
+                    <stop offset="100%" stop-color="transparent"/>
+                </lineargradient>
+              </defs>
+            </svg>
+          </li>
+          <li>
+            <div class="use__text">
+              <p>
+                <b class="mark-red">Leave for 25 minutes</b>, to let the mask dry up and become elastic.
+              </p>
+              <div class="use__item-count">02</div>
+            </div>
+            <svg class="svg" version="1.1" xml:space="preserve" viewbox="0 0 4000 700" preserveaspectratio="none">
+              <polygon fill="url(#mygradient)" stroke="#e60000" stroke-width="8" opacity=".2" stroke-linejoin="round" points="0,0  3800,0  3960,350  3800,700  0,700"></polygon>
+              <defs>
+              </defs>
+            </svg>
+          </li>
+          <li>
+            <div class="use__text">
+              <p>
+                Take the mask by the edge and <b class="mark-red">slowly remove it</b>. Rinse the residue with warm water. <b class="mark-red">Apply the mask 3 times a week.</b>
+              </p>
+              <div class="use__item-count">03</div>
+            </div>
+            <div class="clearfix"></div>
+            <svg class="svg" version="1.1" xml:space="preserve" viewbox="0 0 4000 700" preserveaspectratio="none">
+              <polygon fill="url(#mygradient)" stroke="#e60000" stroke-width="8" opacity=".2" stroke-linejoin="round" points="0,0  3800,0  3960,350  3800,700  0,700"></polygon>
+            </svg>
+          </li>
+        </ul>
+        <div class="use__img"></div>
+        <div class="clearfix"></div>
+      </div>
+    </section>
+    <section class="stat">
+      <div class="wrapper">
+        <div class="stat__img">
+          <img src="img/product.png" alt="">
+        </div>
+        <p class="stat__text">
+          Clinical trials have shown
+          <span class="big">
+<!--             <span class="nowrap">
+ -->          <span>significant</span>
+              <b class="brown">improvements</b>
+<!--             </span>
+ -->          <b class="brown"> of the skin</b>
+              <span>condition</span>
+          </span>
+          <span class="small">in 90% of subjects</span>
+          <button class="button toform">order&nbsp;now</button>
+        </p>
+      </div>
+    </section>
+    <section class="girls">
+      <div class="wrapper">
+        <div class="chevron">
+          <span>for men</span>
+          <img src="img/moustache.png" alt="">
+        </div>
+        <h5>What people think</h5>
+        <ul class="girls__list">
+          <li class="girls__item">
+            <span class="girls__item-title">James, age 29 <br><small>London</small> </span>
+            <div class="girls__item-img">
+              <!-- <img src="img/girl1.jpg" alt=""> -->
+            </div>
+            <div class="girls__item-text">
+              <p class="girls__item-cite">I am meticulous about the way I look, and I'd like my skin to look perfect too. And now, everything is exactly as I wanted :-) <b>All thanks to Black Mask!</b></p>
+            </div>
+          </li>
+          <li class="girls__item">
+            <span class="girls__item-title">Victoria, age 27 <br> <small>Birmingham</small></span>
+            <div class="girls__item-img">
+              <!-- <img src="img/girl2.jpg" alt=""> -->
+            </div>
+            <div class="girls__item-text">
+              <p class="girls__item-cite">I love well-groomed guys, their perfect hair, trendy clothes and of course, clean skin! Well, who would want to date a Sloppy Joe!</p>
+            </div>
+          </li>
+          <li class="girls__item">
+            <span class="girls__item-title">Brad, age 32 <br> <small>Liverpool</small></span>
+            <div class="girls__item-img">
+              <!-- <img src="img/girl3.jpg" alt=""> -->
+            </div>
+            <div class="girls__item-text">
+              <p class="girls__item-cite"><b>Black Mask is something else!</b> I was always unhappy with my skin, I would even use concealer sometimes. But the problem was still there. Black Mask made my skin soft and removed all the imperfections after just a couple of applications.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="quiz">
+      <div class="wrapper">
+        <div class="quiz__left">
+          <div class="quiz__intro">
+            The Institute of Health and Beauty interviewed 2,259 women.
+            <span class="mark-red">They were asked if the condition of men's skin was important to them:</span>
+          </div>
+          <ul class="quiz__graph">
+            <li class="row">
+              <div class="text">
+                Not important
+              </div>
+              <div class="value">
+                <div class="cont1">
+                  <div class="cont2">
+                    2%
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="row">
+              <div class="text">
+                Rather important
+              </div>
+              <div class="value">
+                <div class="cont1">
+                  <div class="cont2">
+                    11%
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="row">
+              <div class="text">
+                Very important
+              </div>
+              <div class="value">
+                <div class="cont1">
+                  <div class="cont2">
+                    87%
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="quiz__right">
+          <div class="big">87%</div>
+          <p><span>The first thing people pay attention to is the condition of your skin</span></p>
+        </div>
+      </div>
+    </section>
+    <section class="results">
+      <div class="wrapper">
+        <div class="chevron">
+          <span>for men</span>
+          <img src="img/moustache.png" alt="">
+        </div>
+        <h5>they have already tried Black Mask</h5>
+      </div>
+      <div class="results__list">
+        <div class="results__item">
+          <div class="wrapper">
+            <div class="results__img results__img-1 results__img--mobile"></div>
+            <div class="results__img results__img-1"></div>
+            <span class="results__author results__author--mobile">Philip, 27</span>
+            <div class="results__text">
+              <div class="border"></div>
+              <span class="results__title">Cool product</span>
+              <hr>
+              <p>I tried the mask just for a laugh, to make funny selfies with my girlfriend. I was surprised when it turned out that the mask removed all the blackheads from my face. I'd had loads of them on my nose.</p>
+              <span class="results__author">Philip, 27</span>
+            </div>
+          </div>
+        </div>
+        <div class="results__item">
+          <div class="wrapper">
+            <div class=" results__img results__img-2 results__img--mobile"></div>
+         <!--    <div class="results__img results__img-2"></div> -->
+            <span class="results__author results__author--mobile">Alex, 25</span>
+            <div class="results__text">
+              <div class="border"></div>
+              <span class="results__title">Soothes irritation</span>
+              <hr>
+              <p>I'm not against using skincare products, I just need them to be fragrance-free. What does a man really want? To remove blackheads and soothe post-shaving irritation. <span class="mark-brown">Black Mask does both pretty well.</span></p>
+              <span class="results__author">Alex, 25</span>
+            </div>
+            <div class="results__img results__img-2"></div>
+          </div>
+        </div>
+        <div class="results__item">
+          <div class="wrapper">
+            <div class="results__img results__img-3 results__img--mobile"></div>
+            <div class="results__img results__img-3"></div>
+            <span class="results__author results__author--mobile">Tom, 21</span>
+            <div class="results__text">
+              <div class="border"></div>
+              <span class="results__title">No problems</span>
+              <hr>
+              <p>By barber recommended this mask. He said girls would pay too much attention to the dark spots and wouldn't notice my glorious beard. He was right. Just 10 minutes a week, and all problems are solved.</p>
+              <span class="results__author">Tom, 21</span>
+            </div>
+          </div>
+        </div>
+      </div><!--results-list-->
+    </section>
+    <footer>
+      <div class="wrapper">
+        <div class="footer__head">
+          <div class="wrapper--mobile">
+            <div class="flag flag--mobile">
+              <span>discount</span>
+              <span>50%</span>
+              <svg class="svg" version="1.1" xml:space="preserve" viewbox="0 0 100 100" preserveaspectratio="none">
+                <polygon  fill="#e60000"  points="0,0   100,0  100,80  50,100  0,80"></polygon>
+              </svg>
+            </div>
+            <h5><span>masculine</span> <span>look</span></h5>
+            <div class="clearfix"></div>
+            <div class="page-title">Black Mask</div>
+            <div class="chevron chevron--main">
+              <span>for men</span>
+              <img src="img/moustache.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="footer__content">
+          <div class="wrapper--mobile">
+            <div class="flag flag--desktop">
+              <p>only today, you can order</p>
+              <span>the product at a discounted price:</span>
+              <span>50%</span>
+              <svg class="svg" version="1.1" xml:space="preserve" viewbox="0 0 100 100" preserveaspectratio="none">
+                <polygon  fill="#e60000"  points="0,0   100,0  100,80  50,100  0,80"></polygon>
+              </svg>
+            </div>
+            <div class="footer__table">
+              <div class="footer__cert">
+                <p>The product is certified and approved by leading dermatologists</p>
+              </div>
+              <div class="footer__prices">
+                <div class="header__product-prices">
+                  <div class="header__prices-old">
+                    <div class="header__prices-old-container">
+                      {{ old_price }} <span>{{ currency }}</span>
+                    </div>
+                  </div>
+                  <div class="header__prices-new">
+                    <div class="header__prices-new-container">
+                      {{ price }} <span> {{ currency }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="footer__form">
+            <div class="wrapper--mobile">
+              <form action="" method="post">
+                <div class="form__title">Place an order</div>
+                <div class="counter">
+                  <p>Stock is limited. Products left at this price:</p>
+                  <div class="counter-footer flip-clock-wrapper" data-countdown="2"></div>
+                </div>
+                <div class="form__inputs">
+                  <div class="select-container">
+                    <select name="" id="country_code_selector">
+                      <option value="GB">United Kingdom</option>
+                    </select>
+                  </div>
+                  <input name="name" type="text" placeholder="Name">
+                  <input name="phone" type="text" class="only_number" placeholder="Phone">
+                  <button class="button js_submit">order&nbsp;now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+      </div>
+    </footer>
+  </div>
+<script src="js/flipclock.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

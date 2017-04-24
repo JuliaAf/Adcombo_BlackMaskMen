@@ -1,0 +1,9 @@
+<svg class="arrow__triangle" version="1.1" xml:space="preserve" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <polygon points="0,0  93,0  100,50  93,100  0,100"></polygon>
+    <defs>
+      <linearGradient id="MyGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+        <stop class="arrow__stop-1" offset="0%"></stop>
+        <stop class="arrow__stop-2" offset="100%"></stop>
+      </linearGradient>
+    </defs>
+  </svg>
